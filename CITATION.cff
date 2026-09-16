@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated article and the archived software release."
+title: "Stuttgart Roof-Facet Fragmentation and Rooftop PV Packing: Replication Package"
+type: software
+authors:
+  - family-names: Tabatabaei
+    given-names: Mahdiyeh
+    affiliation: "Department of Architecture, Alma Mater Studiorum - University of Bologna, Bologna, Italy"
+    email: mahdiyeh.tabatabaei2@unibo.it
+  - family-names: Cremers
+    given-names: Jan
+    affiliation: "Faculty of Architecture and Design, HFT Stuttgart - University of Applied Sciences, Stuttgart, Germany"
+version: 1.0.0
+date-released: 2026-09-16
+license: MIT
+keywords:
+  - rooftop photovoltaics
+  - roof fragmentation
+  - module packing
+  - LoD2
+  - CityGML
+  - Stuttgart
+  - reproducible research
+preferred-citation:
+  type: article
+  title: "Quantifying Roof-Facet Fragmentation Effects on Rooftop PV Packing Using LoD2 Geometry: A Controlled Experiment and Stuttgart Pilot"
+  authors:
+    - family-names: Tabatabaei
+      given-names: Mahdiyeh
+    - family-names: Cremers
+      given-names: Jan
+  journal: Electricity
+  year: 2026

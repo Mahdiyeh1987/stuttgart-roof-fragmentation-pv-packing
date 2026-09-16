@@ -1,0 +1,15 @@
+selection_index,building_id,surface_uid,usable_area_m2,compactness,area_stratum,compactness_stratum,production_count,stress_count,gap_modules,gap_pct,reference_search
+1,DEBW522AA0000006d,DEBW522AA0000006d_PF024,13.768545748155445,0.058501758663637354,0,0,0,0,0,0.0,production edge angles plus ±2.5° perturbations; 11x11 offset grid
+2,DEBW522AA00008bfa,DEBW522AA00008bfa_PF005,10.301375248290881,0.4405967926675063,0,1,3,4,1,25.0,production edge angles plus ±2.5° perturbations; 11x11 offset grid
+3,DEBW522AA00034018,DEBW522AA00034018_PF002,10.62326749482354,0.6859054346903135,0,2,4,4,0,0.0,production edge angles plus ±2.5° perturbations; 11x11 offset grid
+4,DEBW522AA0000006d,DEBW522AA0000006d_PF020,80.15059284568065,0.18731035299591686,1,0,38,38,0,0.0,production edge angles plus ±2.5° perturbations; 11x11 offset grid
+5,DEBW522AA00008bfa,DEBW522AA00008bfa_PF010,61.06341032255749,0.435389264722815,1,1,20,21,1,4.761904761904762,production edge angles plus ±2.5° perturbations; 11x11 offset grid
+6,DEBW522AA00043ffc,DEBW522AA00043ffc_PF058,63.801320612174976,0.7115680859307506,1,2,25,25,0,0.0,production edge angles plus ±2.5° perturbations; 11x11 offset grid
+7,DEBW522AA0000ea62,DEBW522AA0000ea62_PF003,174.9769129939662,0.17496840069503566,2,0,59,59,0,0.0,production edge angles plus ±2.5° perturbations; 11x11 offset grid
+8,DEBW522AA0000006d,DEBW522AA0000006d_PF010,182.0316739605338,0.5002832422904954,2,1,81,81,0,0.0,production edge angles plus ±2.5° perturbations; 11x11 offset grid
+9,DEBW522AA00010752,DEBW522AA00010752_PF005,180.3770809218206,0.6811071821998861,2,2,81,81,0,0.0,production edge angles plus ±2.5° perturbations; 11x11 offset grid
+10,DEBW522AA0000c243,DEBW522AA0000c243_PF001,617.8086896741868,0.22190201553857491,3,0,259,259,0,0.0,production edge angles plus ±2.5° perturbations; 11x11 offset grid
+11,DEBW522AA00014ad3,DEBW522AA00014ad3_PF016,508.3908537635128,0.4463450340360657,3,1,228,228,0,0.0,production edge angles plus ±2.5° perturbations; 11x11 offset grid
+12,DEBW522AA000330e9,DEBW522AA000330e9_PF010,359.5012812691273,0.6557268221643634,3,2,169,169,0,0.0,production edge angles plus ±2.5° perturbations; 11x11 offset grid
+13,DEBW522AA0000006d,DEBW522AA0000006d_PF004,1.9600859734003273,0.6379812472228195,0,2,0,0,0,0.0,production edge angles plus ±2.5° perturbations; 11x11 offset grid
+14,DEBW522AA00027308,DEBW522AA00027308_PF003,2896.8814054840445,0.7417859068600863,3,2,1403,1403,0,0.0,production edge angles plus ±2.5° perturbations; 11x11 offset grid

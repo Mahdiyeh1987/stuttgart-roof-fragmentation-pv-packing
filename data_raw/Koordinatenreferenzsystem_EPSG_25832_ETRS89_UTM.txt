@@ -1,0 +1,3 @@
+Die Daten wurden in folgendem Koordinatenreferenzsystem exportiert:
+EPSG:25832
+UTM-Abbildung in Zone 32 (Mittelmeridian 9 Grad) ohne führende Zonenangabe im Rechswert

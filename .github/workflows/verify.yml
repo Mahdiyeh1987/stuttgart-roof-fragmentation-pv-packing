@@ -1,0 +1,26 @@
+name: verify-replication-package
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Check raw input integrity
+        run: python scripts/check_inputs.py
+      - name: Verify manuscript result crosswalk
+        run: python scripts/verify_reported_results.py
+      - name: Compile scripts
+        run: python -m compileall -q scripts

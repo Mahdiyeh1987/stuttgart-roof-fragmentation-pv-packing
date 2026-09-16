@@ -1,0 +1,8 @@
+{
+  "adjacent_coplanar_pairs": 95,
+  "same_part_pairs": 89,
+  "physical_facets": 340,
+  "source_surfaces": 431,
+  "surfaces_absorbed_by_merge": 91,
+  "buildings_with_merge": 12
+}

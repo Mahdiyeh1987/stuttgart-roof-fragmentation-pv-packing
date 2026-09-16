@@ -1,0 +1,3 @@
+Das von der Landeshauptstadt Stuttgart verwendete AAA-Modell inkl. seiner stuttgarter / kommunaler Erweiterungen als XML-Schemadateien finden Sie unter:
+https://gis6.stuttgart.de/data/GeoExport/GID600.zip
+Das Passwort für die ZIP-Datei lautet: ALKIS+_in_Stuttgart!

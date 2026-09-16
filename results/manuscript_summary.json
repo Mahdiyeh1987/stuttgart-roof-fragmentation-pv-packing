@@ -1,0 +1,61 @@
+{
+  "manuscript_title": "Quantifying Roof-Facet Fragmentation Effects on Rooftop PV Packing Using LoD2 Geometry: A Controlled Experiment and Stuttgart Pilot",
+  "authors": [
+    "Mahdiyeh Tabatabaei",
+    "Jan Cremers"
+  ],
+  "study_window": "historical Stuttgart test-data window; not city-representative",
+  "crs": "EPSG:25832",
+  "base_case": {
+    "buildings": 31,
+    "physical_facets": 340,
+    "usable_area_m2": 63587.46597957246,
+    "continuous_capacity_kwp": 14327.749935481632,
+    "packed_capacity_kwp": 12283.919999999998,
+    "aggregate_shortfall_pct": 14.26483533482279,
+    "median_building_shortfall_pct": 14.496688602631648,
+    "bootstrap_aggregate_95pct": [
+      12.66532080234143,
+      16.595696597437207
+    ]
+  },
+  "primary_association": {
+    "descriptor": "physical-facet density per 100 m2 gross 3D roof area",
+    "spearman_rho": 0.6314516129032258,
+    "p_raw": 0.0001393216490365,
+    "p_fdr_bh": 0.0009752515432556
+  },
+  "packing_search_check": {
+    "n_facets": 14,
+    "agreements": 12,
+    "max_gap_modules": 1,
+    "pooled_difference_pct": 0.08431703204047218,
+    "usable_area_range_m2": [
+      1.9600859734003275,
+      2896.8814054840445
+    ]
+  },
+  "tilt_subsets": {
+    "near_flat_lt5": {
+      "facets": 196,
+      "usable_area_m2": 55812.213726928945,
+      "shortfall_pct": 14.22734555160222
+    },
+    "pitched_ge5": {
+      "facets": 144,
+      "buildings": 7,
+      "shortfall_pct": 14.533944004958933
+    }
+  },
+  "software": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "shapely": "2.1.2",
+    "scipy": "1.17.0",
+    "statsmodels": "0.14.6",
+    "matplotlib": "3.10.8",
+    "lxml": "6.1.1"
+  },
+  "seed": 20260913
+}

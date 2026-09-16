@@ -1,0 +1,19 @@
+# Normalize repository-authored text files, but preserve third-party/raw input bytes exactly.
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.csv text eol=lf
+*.svg text eol=lf
+
+# Reproducibility-critical historical inputs: never alter line endings or bytes.
+data_raw/** -text
+
+# Binary formats.
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.zip -text
+*.docx -text
