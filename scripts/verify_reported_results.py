@@ -33,6 +33,9 @@ def main() -> int:
     align = pd.read_csv(RES / "alkis_citygml_alignment_bestsubset.csv")
     sens = pd.read_csv(RES / "sensitivity_summary.csv").set_index("scenario")
     leave = pd.read_csv(RES / "leave_one_out.csv")
+    reg_full = pd.read_csv(RES / "regression_HC3_full.csv")
+    partial = pd.read_csv(RES / "partial_spearman_size_adjusted.csv")
+    coplanar = pd.read_csv(RES / "coplanar_tolerance_sensitivity.csv")
 
     check("buildings", len(buildings), 31, 0)
     check("physical_facets", len(facets), 340, 0)
@@ -79,6 +82,22 @@ def main() -> int:
 
     check("loo_rho_min", leave.rho_facet_density.min(), 0.593325917686318, 1e-12)
     check("loo_rho_max", leave.rho_facet_density.max(), 0.6765294771968854, 1e-12)
+
+    # Final robustness checks added in v1.1.0.
+    row = reg_full[(reg_full.model == "A_density_plus_log_area") & (reg_full.term == "facet_density_z")].iloc[0]
+    check("hc3_density_coef_pp", row.coefficient_pp, 4.219599, 1e-6)
+    check("hc3_density_p", row.p_value, 0.002562095, 1e-9)
+    row = reg_full[(reg_full.model == "B_count_plus_log_area") & (reg_full.term == "facet_count_z")].iloc[0]
+    check("hc3_raw_count_coef_pp", row.coefficient_pp, 1.204537, 1e-6)
+    check("hc3_raw_count_p", row.p_value, 0.3762769, 1e-7)
+    check("partial_spearman_rho", partial.loc[0, "rho"], 0.6216572157004039, 1e-12)
+    check("partial_spearman_p", partial.loc[0, "p_two_sided"], 0.00024552347053714504, 1e-15)
+    check("coplanar_facets_min", coplanar.physical_facets.min(), 337, 0)
+    check("coplanar_facets_max", coplanar.physical_facets.max(), 342, 0)
+    check("coplanar_shortfall_min", coplanar.aggregate_packing_shortfall_pct.min(), 14.231285321638376, 1e-12)
+    check("coplanar_shortfall_max", coplanar.aggregate_packing_shortfall_pct.max(), 14.277119189634547, 1e-12)
+    check("coplanar_rho_min", coplanar.spearman_rho_facet_density.min(), 0.6314516129032258, 1e-12)
+    check("coplanar_rho_max", coplanar.spearman_rho_facet_density.max(), 0.6568548387096774, 1e-12)
 
     for name, actual, expected, ok in CHECKS:
         print(f"[{'OK' if ok else 'FAIL'}] {name}: {actual} (expected {expected})")

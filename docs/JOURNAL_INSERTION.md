@@ -1,9 +1,13 @@
-# Journal insertion after GitHub and Zenodo publication
+# Journal insertion for the v1.1.0 archive
 
-Once this repository is published on GitHub and the first release is archived in Zenodo, update the manuscript Data Availability Statement with the actual repository URL and Zenodo DOI.
+After publishing the GitHub release `v1.1.0`, create a **new version** of the existing Zenodo record. Zenodo will assign a DOI for that version. Use the DOI shown for the v1.1.0 record in the manuscript.
 
-Suggested final wording:
+Recommended Data Availability wording:
 
-> **Data Availability Statement:** The official Stuttgart CityGML/ALKIS test data and related public geodata sources are identified in Table 2 and Refs. [43–49]. The analysis scripts, processed tables, figure-generation files, software environment information, and input-integrity manifest are available in the public replication repository at **[GITHUB_URL]**. Version **v1.0.0** is permanently archived in Zenodo at **https://doi.org/[ZENODO_DOI]**. The repository records the exact historical input filenames, byte sizes, and SHA-256 checksums used in the analysis.
+> **Data Availability Statement:** The replication package, including analysis scripts, processed tables, software information, input-integrity manifests, and reproducibility documentation, is publicly available on Zenodo at **https://doi.org/[V1.1.0_DOI]** and on GitHub at **https://github.com/Mahdiyeh1987/stuttgart-roof-fragmentation-pv-packing**.
 
-Do not insert a DOI until Zenodo has created the public record.
+Recommended repository reference:
+
+> Tabatabaei, M.; Cremers, J. *Stuttgart Roof-Facet Fragmentation and Rooftop PV Packing: Replication Package, Version 1.1.0*; Zenodo, 2026. https://doi.org/[V1.1.0_DOI].
+
+Do not keep the manuscript citation at “Version 1.0.0” if the final submission is intended to point to the robustness-expanded v1.1.0 archive. Publication figure files remain excluded from the repository and Zenodo archive.

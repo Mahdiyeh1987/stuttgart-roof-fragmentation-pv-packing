@@ -2,6 +2,16 @@
 
 All notable changes to the public replication package are documented here.
 
+## 1.1.0 - 2026-09-20
+
+- Added the final manuscript robustness checks without adding any publication image files.
+- Added HC3 regression outputs for both facet-density + log-area and raw-facet-count + log-area specifications.
+- Added the residual-rank partial Spearman result controlling for ranked log gross 3D roof area (rho = 0.622; two-sided p = 0.00025).
+- Added the seven-pair coplanar-consolidation tolerance grid, including physical-facet counts, aggregate packing shortfall, and facet-density Spearman rho.
+- Updated the manuscript-to-repository result crosswalk, verification script, reproducibility documentation, and supplementary material to match the final submission files.
+- Corrected the bootstrap terminology to “95% bootstrap percentile interval”.
+- Kept publication figures excluded from the repository and Zenodo package.
+
 ## 1.0.0 - 2026-09-16
 
 - Prepared the public GitHub/Zenodo replication release for the submitted *Electricity* manuscript.

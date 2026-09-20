@@ -3,7 +3,8 @@
 ## Public entry points
 
 - `check_inputs.py` — validates the exact historical analytical inputs by byte size and SHA-256.
-- `verify_reported_results.py` — fast manuscript/result crosswalk assertions.
+- `verify_reported_results.py` — fast manuscript/result crosswalk assertions, including the final robustness outputs.
+- `run_robustness_checks.py` — regenerates the final HC3 models, residual-rank partial Spearman result, and coplanar-tolerance sensitivity grid.
 - `run_scenario.py` — reruns one empirical scenario into `reproduced/`.
 - `run_benchmark.py` — reruns the submitted 14-facet numerical search benchmark.
 - `reproduce_empirical.py` — convenience runner for input check + base empirical rerun + benchmark.

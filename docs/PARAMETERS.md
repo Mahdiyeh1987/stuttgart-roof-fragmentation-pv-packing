@@ -52,7 +52,9 @@ The submitted analytical lineage is 450 raw roof polygons → 431 retained sourc
 | Multiple-testing correction | Benjamini–Hochberg FDR across the 7 descriptors |
 | Bootstrap | 10,000 building-level resamples with replacement |
 | Bootstrap seed | 20260913 |
-| Size-adjusted check | HC3-robust OLS with standardized facet density and standardized log gross 3D roof area |
+| Size-adjusted check A | HC3-robust OLS with standardized facet density and standardized log gross 3D roof area |
+| Size-adjusted check B | HC3-robust OLS with standardized raw physical-facet count and standardized log gross 3D roof area |
+| Partial-rank check | Residual-rank partial Spearman between facet density and packing shortfall, controlling for ranked log gross 3D roof area |
 | Influence check | leave-one-building-out primary Spearman coefficient |
 
 ## Sensitivity scenarios
@@ -62,7 +64,8 @@ The submitted analytical lineage is 450 raw roof polygons → 431 retained sourc
 - clearance: 0, 10, 20, 40 mm (0 mm only a theoretical lower bound);
 - roof tilt: near-flat <5° and pitched ≥5°, using the same base clipping;
 - influence: remove largest one / largest three buildings;
-- spatial consistency: ALKIS–CityGML best-match IoU ≥0.80 and ≥0.90.
+- spatial consistency: ALKIS–CityGML best-match IoU ≥0.80 and ≥0.90;
+- coplanar consolidation: normal/vertical tolerance pairs (0.5°,0.05 m), (0.5°,0.10 m), (1.0°,0.05 m), (1.0°,0.10 m), (1.0°,0.20 m), (2.0°,0.10 m), and (2.0°,0.20 m).
 
 ## Numerical packing-search check
 

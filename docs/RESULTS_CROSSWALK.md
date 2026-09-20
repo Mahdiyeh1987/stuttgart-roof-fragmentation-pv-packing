@@ -19,6 +19,15 @@ This table maps the principal submitted results to their canonical repository fi
 | HC3 facet-density coefficient | 4.22 percentage points | `results/regression_HC3.csv` |
 | HC3 95% CI | 1.48–6.96 | `results/regression_HC3.csv` |
 | HC3 p | 0.0026 | `results/regression_HC3.csv` |
+| HC3 density + log-area model R² / adjusted R² | 0.641 / 0.615 | `results/regression_HC3_full.csv` |
+| Raw facet-count HC3 coefficient | 1.205 percentage points | `results/regression_HC3_full.csv` |
+| Raw facet-count HC3 p | 0.3763 | `results/regression_HC3_full.csv` |
+| Raw-count + log-area model R² / adjusted R² | 0.140 / 0.079 | `results/regression_HC3_full.csv` |
+| Partial Spearman rho (size-adjusted) | 0.622 | `results/partial_spearman_size_adjusted.csv` |
+| Partial Spearman two-sided p | 0.00025 | `results/partial_spearman_size_adjusted.csv` |
+| Coplanar tolerance physical facets | 337–342 | `results/coplanar_tolerance_sensitivity.csv` |
+| Coplanar tolerance aggregate shortfall | 14.23–14.28% | `results/coplanar_tolerance_sensitivity.csv` |
+| Coplanar tolerance facet-density rho | 0.631–0.657 | `results/coplanar_tolerance_sensitivity.csv` |
 | 14-facet benchmark agreement | 12/14 | `results/packing_benchmark.csv` |
 | Benchmark pooled count difference | 0.08% | `results/packing_benchmark.csv` |
 | No-setback shortfall | 14.40% | `results/sensitivity_summary.csv` |

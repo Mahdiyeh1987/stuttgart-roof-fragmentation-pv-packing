@@ -24,7 +24,7 @@ The submitted base case contains **31 buildings and 340 physical roof facets**. 
 | Continuous-area capacity reference | 14.328 MWp |
 | Explicitly packed capacity | 12.284 MWp |
 | Aggregate packing shortfall | 14.26% |
-| 95% percentile bootstrap interval | 12.67–16.60% |
+| 95% bootstrap percentile interval | 12.67–16.60% |
 | Spearman ρ: physical-facet density vs. shortfall | 0.631 |
 | FDR-adjusted p | 0.0010 |
 
@@ -75,10 +75,11 @@ Then run the fast integrity checks:
 ```bash
 python scripts/check_inputs.py
 python scripts/verify_reported_results.py
+python scripts/run_robustness_checks.py --skip-coplanar  # fast final robustness checks
 python scripts/make_figures.py  # optional; generates figures locally into an ignored figures/ folder
 ```
 
-`check_inputs.py` verifies the exact historical analytical inputs using their byte sizes and SHA-256 hashes. `verify_reported_results.py` checks the archived result tables against the numerical values reported in the submitted manuscript. `make_figures.py` can regenerate analytical Figures 1 and 3–7 locally from repository-relative inputs. Generated figure files are intentionally excluded from this public repository. Figure 2 is not redistributed because it contains contextual municipal aerial imagery and is not a computational input.
+`check_inputs.py` verifies the exact historical analytical inputs using their byte sizes and SHA-256 hashes. `verify_reported_results.py` checks the archived result tables against the numerical values reported in the submitted manuscript, including the final size-adjusted robustness checks. `run_robustness_checks.py` regenerates the two HC3 models, the residual-rank partial Spearman check, and the seven-pair coplanar-tolerance sensitivity grid. `make_figures.py` can regenerate analytical Figures 1 and 3–7 locally from repository-relative inputs. Generated figure files are intentionally excluded from this public repository. Figure 2 is not redistributed because it contains contextual municipal aerial imagery and is not a computational input.
 
 ## Re-run the empirical analysis from raw inputs
 
@@ -97,6 +98,12 @@ python scripts/run_benchmark.py
 ```
 
 The empirical pipeline performs CityGML parsing, geometry repair, nested-coplanar exclusion, adjacent-coplanar consolidation, roof-plane transformation, setback clipping, complete-module packing, and aggregation. See [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) for the exact reproducibility scope and entry points.
+
+## Final robustness checks
+
+Version 1.1.0 adds the robustness outputs reported in the final manuscript: (i) HC3-robust OLS using standardized facet density plus log gross 3D roof area; (ii) the complementary raw physical-facet-count plus log-area model; (iii) a residual-rank partial Spearman check controlling for ranked log gross 3D roof area; and (iv) the seven-pair coplanar-consolidation tolerance grid. Canonical outputs are archived under `results/`, and `python scripts/run_robustness_checks.py` regenerates them.
+
+No publication image files are distributed in this repository. Figure-generation code is retained only for reproducibility and writes to a Git-ignored local directory.
 
 ## Controlled fragmentation experiment
 
@@ -147,7 +154,7 @@ See [`THIRD_PARTY_DATA.md`](THIRD_PARTY_DATA.md) for source-data provenance and 
 
 ## Citation
 
-Use the repository citation metadata in [`CITATION.cff`](CITATION.cff). After the first public GitHub release is archived in Zenodo, add the Zenodo DOI to both `CITATION.cff` and the manuscript Data Availability Statement.
+Use the repository citation metadata in [`CITATION.cff`](CITATION.cff). For the final manuscript, cite the Zenodo DOI corresponding to the exact archived release used at submission. Version 1.1.0 supersedes 1.0.0 for the final robustness-expanded package.
 
 ## Authors
 

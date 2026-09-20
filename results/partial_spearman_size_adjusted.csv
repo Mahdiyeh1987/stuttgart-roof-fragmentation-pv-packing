@@ -1,0 +1,2 @@
+method,x,y,control,rho,t_statistic,df,p_two_sided,n
+partial_spearman_residualized_ranks,facet_density_per_100m2_gross3d,packing_shortfall_pct,log_gross_roof_area_3d_m2,0.6216572157004039,4.199598166305982,28,0.00024552347053714504,31

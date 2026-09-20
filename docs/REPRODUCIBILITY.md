@@ -32,7 +32,7 @@ Canonical publication tables under `results/` are never overwritten by this comm
 
 `python scripts/make_figures.py` regenerates analytical Figures 1 and 3–7 locally from canonical repository tables. The generated files are written to `figures/`, which is intentionally excluded from version control. Figure 2 is not redistributed because it includes municipal contextual aerial imagery and is not part of the quantitative computation.
 
-`python scripts/verify_reported_results.py` checks the manuscript crosswalk, including the 31/340 object counts, 14.26% aggregate shortfall, bootstrap interval, primary Spearman coefficient, FDR-adjusted p-value, controlled-experiment summary values, benchmark agreement, tilt subsets, ALKIS–CityGML screens, and leave-one-building-out range.
+`python scripts/verify_reported_results.py` checks the manuscript crosswalk, including the 31/340 object counts, 14.26% aggregate shortfall, bootstrap interval, primary Spearman coefficient, FDR-adjusted p-value, controlled-experiment summary values, benchmark agreement, tilt subsets, ALKIS–CityGML screens, leave-one-building-out range, both final HC3 models, the partial Spearman result, and the coplanar-tolerance sensitivity range.
 
 ### 3. Archived controlled-experiment publication outputs
 
@@ -78,6 +78,21 @@ Figure regeneration:
 ```bash
 python scripts/make_figures.py  # optional local generation; output is git-ignored
 ```
+
+Final robustness checks:
+
+```bash
+python scripts/run_robustness_checks.py
+```
+
+For a fast run that skips the geometry/packing tolerance grid:
+
+```bash
+python scripts/run_robustness_checks.py --skip-coplanar
+```
+
+The full robustness command regenerates `regression_HC3_full.csv`, `partial_spearman_size_adjusted.csv`, and `coplanar_tolerance_sensitivity.csv` into `reproduced/`. The tolerance-grid routine keeps the base nested-surface audit fixed, varies the adjacent-coplanar normal/vertical tolerances, detects buildings whose physical-facet grouping changes, and repacks only those affected buildings before recomputing the whole-window aggregate shortfall and Spearman coefficient.
+
 
 ## Random seeds
 
