@@ -2,7 +2,7 @@
   "title": "Stuttgart Roof-Facet Fragmentation and Rooftop PV Packing: Replication Package",
   "upload_type": "software",
   "publication_date": "2026-09-20",
-  "description": "Replication package supporting the article 'Quantifying Roof-Facet Fragmentation Effects on Rooftop PV Packing Using LoD2 Geometry: A Controlled Experiment and Stuttgart Pilot'. The archive contains the historical Stuttgart CityGML/ALKIS analytical inputs, geometry-audit and packing code, canonical processed tables, sensitivity and statistical outputs, input-integrity checks, and reproducibility documentation.",
+  "description": "Replication package supporting the article 'Roof-Facet Fragmentation and Rooftop PV Packing: A Controlled LoD2 Study with a Stuttgart Pilot'. The archive contains the historical Stuttgart CityGML/ALKIS analytical inputs, geometry-audit and packing code, canonical processed tables, sensitivity and statistical outputs, input-integrity checks, and reproducibility documentation.",
   "creators": [
     {
       "name": "Tabatabaei, Mahdiyeh",
