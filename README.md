@@ -5,7 +5,7 @@
 
 Replication data, analysis code, and processed results for:
 
-> **Quantifying Roof-Facet Fragmentation Effects on Rooftop PV Packing Using LoD2 Geometry: A Controlled Experiment and Stuttgart Pilot**  
+> **Roof-Facet Fragmentation and Rooftop PV Packing: A Controlled LoD2 Study with a Stuttgart Pilot**  
 > Mahdiyeh Tabatabaei and Jan Cremers  
 > Submitted to *Electricity* (2026).
 
