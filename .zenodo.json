@@ -1,7 +1,7 @@
 {
   "title": "Stuttgart Roof-Facet Fragmentation and Rooftop PV Packing: Replication Package",
   "upload_type": "software",
-  "publication_date": "2026-09-20",
+  "publication_date": "2026-10-25",
   "description": "Replication package supporting the article 'Roof-Facet Fragmentation and Rooftop PV Packing: A Controlled LoD2 Study with a Stuttgart Pilot'. The archive contains the historical Stuttgart CityGML/ALKIS analytical inputs, geometry-audit and packing code, canonical processed tables, sensitivity and statistical outputs, input-integrity checks, and reproducibility documentation.",
   "creators": [
     {
@@ -26,5 +26,5 @@
   "access_right": "open",
   "license": "mit",
   "language": "eng",
-  "version": "1.1.0"
+  "version": "1.2.0"
 }
