@@ -1,0 +1,9 @@
+{
+  "test_cases": 17,
+  "passed_original": 12,
+  "failed_original": 5,
+  "passed_precision_corrected": 17,
+  "failed_precision_corrected": 0,
+  "expected_values_are_proven_by_constructive_tiling_and_area_bound": true,
+  "numerical_tolerance_m": 1e-08
+}

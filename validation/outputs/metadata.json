@@ -1,0 +1,18 @@
+{
+  "seed": 20260913,
+  "repeats": 50,
+  "outer_roof_m": [
+    12,
+    10
+  ],
+  "external_setback_m": 0.3,
+  "min_piece_area_m2": 0.8,
+  "uniform_interior_point_sampler": "rejection bounding box",
+  "split_angle": "uniform [0,pi)",
+  "area_weighted_facet_choice": true,
+  "rejection_policy": "retry splits creating part below 0.8 m\u00b2",
+  "same_pack_production": true,
+  "independent_generator_not_identical_to_historical": true,
+  "baseline_modules": 48,
+  "seconds_elapsed": 92.699
+}

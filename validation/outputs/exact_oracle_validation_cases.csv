@@ -1,0 +1,18 @@
+case,expected_exact_modules,production_modules,tolerance_corrected_modules,production_pass,corrected_pass,module_gap_m,roof_area_m2,area_upper_bound,proof
+axis_exact_1x1,1,1,1,True,True,0.0,1.952748,1,explicit tiling + area upper bound
+axis_exact_2x2,4,4,4,True,True,0.0,7.810992,4,explicit tiling + area upper bound
+axis_exact_3x2,6,6,6,True,True,0.0,11.716488,6,explicit tiling + area upper bound
+axis_exact_4x3,12,12,12,True,True,0.0,23.432976,12,explicit tiling + area upper bound
+rotated_exact_23,6,3,6,False,True,0.0,11.716488,6,explicit tiling + area upper bound
+rotated_exact_47.5,6,2,6,False,True,0.0,11.716488,6,explicit tiling + area upper bound
+rotated_exact_90,6,6,6,True,True,0.0,11.716488,6,explicit tiling + area upper bound
+L_shaped_three_modules,3,3,3,True,True,0.0,5.858244,3,explicit tiling + area upper bound
+roof_hole_five_modules,5,5,5,True,True,0.0,9.76374,5,explicit tiling + area upper bound
+narrow_straight_strip,0,0,0,True,True,0.0,5.6,2,"width 0.7 m < minimum 1.134 m dimension, for any rotation"
+clearance_10mm_exact_1x1,1,1,1,True,True,0.01,1.952748,1,constructive lattice + area bound
+clearance_10mm_exact_2x2,4,4,4,True,True,0.01,7.868212,4,constructive lattice + area bound
+clearance_10mm_exact_3x2,6,6,6,True,True,0.01,11.819588,6,constructive lattice + area bound
+rotated_5cm_margin_23,6,3,6,False,True,0.0,12.411088,6,explicit tiling + area upper bound
+rotated_5cm_margin_47.5,6,6,6,True,True,0.0,12.411088,6,explicit tiling + area upper bound
+rotated_clearance_10mm_margin_23,6,4,6,False,True,0.01,12.517188,6,explicit tiling + area upper bound
+rotated_clearance_10mm_margin_47.5,6,4,6,False,True,0.01,12.517188,6,explicit tiling + area upper bound

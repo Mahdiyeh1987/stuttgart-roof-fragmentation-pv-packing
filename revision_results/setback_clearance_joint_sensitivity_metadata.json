@@ -1,0 +1,7 @@
+{
+  "preparation_plus_scenarios_total_seconds": 15.711005273999945,
+  "python": "3.13.5",
+  "cpu_count": 5,
+  "method": "same production search, 9x9 offsets, all 340 facets and 31 buildings",
+  "n_input_facets": 340
+}

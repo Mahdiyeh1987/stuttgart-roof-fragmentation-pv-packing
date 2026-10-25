@@ -1,0 +1,29 @@
+{
+  "method": "two orthogonal dominant-axis placements with 9x9 offset search; not an unrestricted layout or rack-tilt study",
+  "n_buildings": 31,
+  "n_physical_facets": 340,
+  "n_parts": 347,
+  "workers": 5,
+  "preparation_seconds": 1.0530034849998628,
+  "packing_seconds": 7.185669120000057,
+  "total_seconds": 8.440092413000002,
+  "python_version": "3.13.5",
+  "continuous_kwp": 14327.749935481632,
+  "orientation_modes": {
+    "axis_0": {
+      "n_modules": 26589,
+      "packed_kwp": 11699.16,
+      "packing_shortfall_pct": 18.34614609633939
+    },
+    "axis_90": {
+      "n_modules": 27422,
+      "packed_kwp": 12065.68,
+      "packing_shortfall_pct": 15.788033331596473
+    },
+    "axis_best": {
+      "n_modules": 27592,
+      "packed_kwp": 12140.48,
+      "packing_shortfall_pct": 15.265969502057109
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "original_shortfall_pct": 14.26483533482279,
+  "precision_tolerant_shortfall_pct": 14.26483533482279,
+  "delta_shortfall_pp": 0.0,
+  "n_physical_facets": 340,
+  "facets_changed": 0,
+  "module_count_difference_total": 0,
+  "runtime_s": 62.04,
+  "numerical_buffer_m": 1e-08
+}
