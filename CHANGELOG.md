@@ -1,7 +1,15 @@
 # Changelog
 
 All notable changes to the public replication package are documented here.
+## 1.2.0 - 2026-10-25
 
+- Added independent validation of the PV packing algorithm using 17 known-answer geometries.
+- Verified numerical precision across all 340 physical roof facets without changing the original capacity results.
+- Added an independent controlled fragmentation experiment with 550 realizations.
+- Added module orientation and joint setback-clearance sensitivity analyses.
+- Included new validation scripts, results, and reproducibility documentation.
+- Preserved the original datasets and canonical results from v1.1.0.
+  
 ## 1.1.0 - 2026-09-20
 
 - Added the final manuscript robustness checks without adding any publication image files.
