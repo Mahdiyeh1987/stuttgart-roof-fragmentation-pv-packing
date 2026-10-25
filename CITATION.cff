@@ -10,8 +10,8 @@ authors:
   - family-names: Cremers
     given-names: Jan
     affiliation: "Faculty of Architecture and Design, HFT Stuttgart - University of Applied Sciences, Stuttgart, Germany"
-version: 1.1.0
-date-released: 2026-09-20
+version: 1.2.0
+date-released: 2026-10-25
 license: MIT
 keywords:
   - rooftop photovoltaics
