@@ -12,6 +12,26 @@ Replication data, analysis code, and processed results for:
 ## What this repository reproduces
 
 The study separates two related geometric effects:
+## Major revision: independent validation and sensitivity analyses (v1.2.0)
+
+This update accompanies the major revision of the Electricity manuscript. The original v1.1.0 raw data, scripts, and canonical results remain unchanged.
+
+### Additional analyses
+
+- **Empirical reproducibility:** The original 31-building, 340-facet Stuttgart analysis was reproduced, confirming a 14.264835% packing shortfall.
+- **Independent geometric validation:** 17 known-answer geometries were tested. Strict boundary containment passed 12/17 cases; applying a 1e-8 m numerical tolerance passed 17/17.
+- **Full-data precision audit:** All 340 facet-level module counts remained unchanged with the numerical tolerance.
+- **Independent controlled replication:** A new random subdivision implementation generated 550 cases. The 12-facet median fragmentation loss was 47.92%, supporting the original increasing-loss trend.
+- **Orientation sensitivity:** Dominant-axis, orthogonal-axis, and best-of-two searches yielded approximately 18.35%, 15.79%, and 15.27% shortfall, compared with 14.26% for the unrestricted search.
+- **Joint sensitivity:** Six setback and inter-module clearance scenarios were tested.
+
+### Reproduction and limitations
+
+The new scripts and results are available in [validation](validation/), [revision_results](revision_results/), and [the revision documentation](docs/REVIEW_REVISION_2026.md).
+
+The historical random polygon generator was not recovered. The new controlled experiment is an independent replication, not a byte-identical reconstruction. The numerical tolerance does not change physical setbacks or module spacing. These tests do not establish globally optimal packing or verify installation feasibility.
+
+The v1.2.0 release and corresponding Zenodo record will be finalized separately.
 
 1. a **controlled fragmentation experiment**, in which the outer roof geometry remains fixed while non-crossable internal subdivisions are added; and
 2. an **empirical Stuttgart LoD2 pilot**, in which complete rectangular PV modules are packed independently on audited physical roof facets.
